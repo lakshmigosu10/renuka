@@ -1,0 +1,10 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: "Create user"
+Resources:
+ ganesh:
+  Type: AWS::IAM::User
+  Properties:
+    LoginProfile:
+      Password: welcome
+      PasswordResetRequired: No
+    UserName: pandu
